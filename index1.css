@@ -164,12 +164,15 @@ body {
     grid-template-rows: 1000px 1fr;
 }
 .content_block2 {
+    margin-left: 108px;
     margin-top: 54px;
     display: grid;
     grid-template-rows: 114px 176px 186px 186px 163px;
 
 }
 .content_block3 {
+    margin-left: 102px;
+
     display: grid;
     grid-template-rows: 642px 220px;
 }
@@ -268,7 +271,7 @@ body {
 
 .home_imgBerries {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 60%),
-    url("./img/bgs/berries.png");
+    url("./img/bgs/berries.png") no-repeat;
     width: 100%;
     height: 150%;
     position: absolute;
@@ -513,6 +516,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 270px;
     align-items: end;
+    justify-items: center;
 }
 
 .prod {
@@ -597,4 +601,80 @@ body {
     line-height: 24px;
     color: rgba(81, 80, 118, 0.6);
     text-decoration: line-through;
+}
+
+.sale2_imgs {
+    width: 330px;
+    height: 360px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sale2_b1 {
+    position: relative;
+    left: 100px;
+    z-index: 2;
+}
+
+.sale2_b2 {
+    position: relative;
+    right: 115px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.sale3_imgs {
+    padding-top: 100px;
+    width: 330px;
+    height: 360px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sale3_b1 {
+    position: relative;
+    top: 20px;
+    left: 280px;
+    z-index: 3;
+
+}
+
+.sale3_b2 {
+    position: relative;
+    left: 30px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.sale3_b3 {
+    position: relative;
+    right: 395px;
+    bottom: 30px;
+    z-index: 2;
+}
+
+.content_about {
+    /*margin-top: 131px;*/
+    margin: 0 auto;
+}
+
+.about_header {
+    font-size: 330px;
+    line-height: 305px;
+    display: flex;
+    align-items: center;
+    color: #D6D4E7;
+    font-family: Playfair Display, sans-serif;
+    position: relative;
+    top: 150px;
+}
+
+.about_wrapper {
+    background: #EDECF6;
+    width: 100%;
+    position: relative;
+    z-index: -10;
 }
